@@ -4,7 +4,7 @@
     --branco: white;
     --cor-de-fundo: #e8cdfa;
     --fundo-senha: #f9ffde;
-    --fundo-texto: #001d3f;
+    --fundo-texto: #aed3fb;
     --borda: #ae58d0;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
@@ -104,6 +104,10 @@ body{
    padding: 24px;
    margin: 0px;
 font-size: 24px;
+}
+
+label{
+    font-size: 20px;
 }
 
 @media screen  and (min-width: 768px) {
