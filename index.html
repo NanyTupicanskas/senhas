@@ -17,7 +17,8 @@
         </div>
         <div class="conteudo-senha">
             <label for="campo-senha">Senha</label>
-            <input name="senha" type="text" id="campo-senha">
+            <input name="senha" type="text" id="campo-senha" readonly>
+            <button id="btn-gerar">Gerar senha</button>
         </div>
         <div class="parametro">
             <h3 class="parametro-titulo">Personalize sua senha</h3>
@@ -25,9 +26,9 @@
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Número de caracteres</h4>
                     <div class="parametro-senha-botoes">
-                        <button class="parametro-senha__botao">-</button>
-                        <p class="parametro-senha__texto">12</p>
-                        <button class="parametro-senha__botao">+</button>
+                        <button class="parametro-senha__botao" id="btn-menos">-</button>
+                        <p class="parametro-senha__texto" id="num-caracteres">12</p>
+                        <button class="parametro-senha__botao" id="btn-mais">+</button>
                     </div>
                 </div>
                 <div class="parametro-senha">
@@ -37,22 +38,22 @@
                         <label for="maiusculo">Letras maiúsculas</label>
                     </div>
                     <div class="parametro-senha-checkbox">
-                        <input name="minusculo" type="checkbox" id="minusculo">
+                        <input name="minusculo" type="checkbox" id="minusculo" checked>
                         <label for="minusculo">Letras minúsculas</label>
                     </div>
                     <div class="parametro-senha-checkbox">
-                        <input name="numero" type="checkbox" id="numero">
+                        <input name="numero" type="checkbox" id="numero" checked>
                         <label for="numero">Números</label>
                     </div>
                     <div class="parametro-senha-checkbox">
-                        <input name="simbolo" type="checkbox" id="simbolo">
+                        <input name="simbolo" type="checkbox" id="simbolo" checked>
                         <label for="simbolo">Símbolos</label>
                     </div>
                 </div>
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Força da senha</h4>
                     <div class="barra"></div>
-                    <div class="forca forte"></div>
+                    <div class="forca forte" id="forca-senha"></div>
                     <div class="parametro-senha-textos">
                         <p>Fraca</p>
                         <p>Média</p>
@@ -62,6 +63,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
